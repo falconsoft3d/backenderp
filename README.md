@@ -22,7 +22,8 @@ http://localhost:8000
 
 # Django
 ```
-python manage.py startapp www
+python manage.py startapp myapp apps/<myapp>
+python manage.py startapp <www>
 python manage.py makemigrations
 python manage.py migrate
 ```

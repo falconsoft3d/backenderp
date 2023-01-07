@@ -8,15 +8,21 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-import os
+import os, sys
 import environ
+import logging
+
+_logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s -%(filename)s:%(lineno)d - %(message)s')
+logging.debug(' = BackenERP =')
 
 # Initialise environment variables
 env = environ.Env()
 environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+sys.path.append(os.path.join(BASE_DIR, "apps"))
 
 
 # Quick-start development settings - unsuitable for production
@@ -40,6 +46,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # Apps
+    'apps.base',
 ]
 
 MIDDLEWARE = [
