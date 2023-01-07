@@ -24,3 +24,4 @@ jobs:
       run: docker build -t mfalconsoft/backenderp .
       
     - name: Docker Push
+      run: docker push mfalconsoft/backenderp
