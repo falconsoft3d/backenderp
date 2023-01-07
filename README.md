@@ -50,7 +50,7 @@ docker run -d -p 8000:8000 mfalconsoft/caprover-django
 ```
 Marlon Falcón Hernández | Valencia | Spain
 * ERP, CRM y Software: https://www.marlonfalcon.com
-» Email: mfalconsoft@gmail.com , falconsof.3d@gmail.com
+» Email: mfalconsoft@gmail.com
 » Github: https://github.com/falconsoft3d
 » linkedin: https://linkedin.com/in/marlon-falcón-3a2aa9a4
 ```
