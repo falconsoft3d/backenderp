@@ -1,9 +1,7 @@
-# backenderp
+# backenderp : [backenderp.com](https://backenderp.com)
 
 # Backend generic for ERP or Ecommerce
 This is a project in development, is not ready for production.
-
-## Website: [backenderp.com](https://backenderp.com)
 
 # How install
 ```
