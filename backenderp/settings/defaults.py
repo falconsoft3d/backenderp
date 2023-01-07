@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'apps.base',
     'apps.dashboard',
     'apps.static_home',
+    'apps.stock',
 ]
 
 MIDDLEWARE = [
