@@ -24,6 +24,8 @@ class Category(ClassModel):
         return self.name
 
     class Meta:
+        app_label = 'category'
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
         ordering = ['name']
+    

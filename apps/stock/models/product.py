@@ -1,6 +1,6 @@
 from django.db import models
 from base.models import ClassModel
-from stock.models.category import Category
+# from stock.models.category import Category
 
 PRODUCT_TYPE = (
         ('service', 'Service'),
@@ -17,19 +17,20 @@ class Product(ClassModel):
     type = models.CharField(
         choices=PRODUCT_TYPE, max_length=100, default='product')
 
-    category_id = models.ForeignKey(
-        Category,
-        on_delete=models.PROTECT,
-        verbose_name=('Category'),
-        null=True,
-        blank=True
-    )
+    # category_id = models.ForeignKey(
+    #     Category,
+    #     on_delete=models.PROTECT,
+    #     verbose_name=('Category'),
+    #     null=True,
+    #     blank=True
+    # )
     
 
     def __str__(self):
         return self.name
 
     class Meta:
+        # app_label = 'products'
         verbose_name = 'Product'
         verbose_name_plural = 'Products'
         ordering = ['name']
